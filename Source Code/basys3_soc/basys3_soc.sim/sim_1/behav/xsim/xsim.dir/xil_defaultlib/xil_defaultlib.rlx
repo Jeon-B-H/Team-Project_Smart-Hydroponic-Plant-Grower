@@ -1,0 +1,7 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/work/vivado_2019/basys3_soc/basys3_soc.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v,1722411564,verilog,,,,HC_SR04_cntr;HC_SR04_cntr_test;button_cntr;dht11_cntrl;fnd_cntr;key_pad_FSM;key_pad_cntr;pwm_100step,,,,,,,,
+C:/work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v,1721283679,verilog,,C:/work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v,,D_flip_flop_n;D_flip_flop_p;T_flip_flop_n;T_flip_flop_p;bcd_downcounter_p;bcd_up_downcounter_p;bcd_upcounter_p;down_counter_asyc;down_counter_n;down_counter_p;edge_detector_n;edge_detector_p;register_8bit_n;register_Nbit_n;ring_counter;ring_counter_fnd;ring_counter_led;shift_register_PISO_Nbit_n;shift_register_PISO_n;shift_register_SIPO_Nbit_n;shift_register_SIPO_n;shift_register_SISO_Nbit_msb_n;shift_register_SISO_Nbit_n;shift_register_SISO_n;sram_8bit_1024;up_counter_asyc;up_counter_n;up_counter_p;up_downcounter_p,,,,,,,,

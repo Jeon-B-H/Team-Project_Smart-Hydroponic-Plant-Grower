@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Aug 26 18:22:21 2024
+# Process ID: 12136
+# Current directory: E:/Work/vivado_2019/basys3_soc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10328 E:\Work\vivado_2019\basys3_soc\basys3_soc.xpr
+# Log file: E:/Work/vivado_2019/basys3_soc/vivado.log
+# Journal file: E:/Work/vivado_2019/basys3_soc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Work/vivado_2019/basys3_soc/basys3_soc.xpr
+update_compile_order -fileset sources_1

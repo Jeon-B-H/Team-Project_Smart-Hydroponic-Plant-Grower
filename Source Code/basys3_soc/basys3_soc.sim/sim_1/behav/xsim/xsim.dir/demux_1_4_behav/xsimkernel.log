@@ -1,0 +1,7 @@
+Running: xsim.dir/demux_1_4_behav/xsimk.exe -simmode gui -wdb demux_1_4_behav.wdb -simrunnum 0 -socket 51245
+Design successfully loaded
+Design Loading Memory Usage: 5932 KB (Peak: 5932 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 6552 KB (Peak: 6552 KB)
+Simulation CPU Usage: 30 ms

@@ -1,0 +1,1349 @@
+
+*** Running vivado
+    with args -log top_module_of_smart_farm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module_of_smart_farm.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top_module_of_smart_farm.tcl -notrace
+Command: synth_design -top top_module_of_smart_farm -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 42956 
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:691]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:835]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1175.844 ; gain = 235.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module_of_smart_farm' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:49]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_p' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_p' (1#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
+WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'button_cntr' (2#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:49]
+WARNING: [Synth 8-7023] instance 'btn0' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:47]
+WARNING: [Synth 8-7023] instance 'btn1' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:48]
+WARNING: [Synth 8-7023] instance 'btn2' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:49]
+INFO: [Synth 8-6157] synthesizing module 'dht11_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:141]
+INFO: [Synth 8-6157] synthesizing module 'dht11_cntrl' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:337]
+	Parameter S_IDLE bound to: 6'b000001 
+	Parameter S_LOW_18MS bound to: 6'b000010 
+	Parameter S_HIGH_20US bound to: 6'b000100 
+	Parameter S_LOW_80US bound to: 6'b001000 
+	Parameter S_HIGH_80US bound to: 6'b010000 
+	Parameter S_READ_DATA bound to: 6'b100000 
+	Parameter S_WAIT_PEDGE bound to: 2'b01 
+	Parameter S_WAIT_NEDGE bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'clock_div_100' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:23]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (3#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (4#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:23]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:359]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:467]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:397]
+WARNING: [Synth 8-5788] Register dht11_buffer_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:378]
+WARNING: [Synth 8-5788] Register humidity_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:498]
+WARNING: [Synth 8-5788] Register temperature_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:499]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_cntrl' (5#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:337]
+WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (16) of module 'dht11_cntrl' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_control' (6#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:141]
+INFO: [Synth 8-6157] synthesizing module 'cds_and_water_level_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:156]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_10' [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.v:53]
+INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:82113]
+	Parameter INIT_40 bound to: 16'b0000000000000000 
+	Parameter INIT_41 bound to: 16'b0010000100001111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000000000000 
+	Parameter INIT_49 bound to: 16'b1000000001000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b1000000001000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (7#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:82113]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_10' (8#1) [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.v:53]
+WARNING: [Synth 8-689] width (17) of port connection 'do_out' does not match port width (16) of module 'xadc_wiz_10' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:178]
+WARNING: [Synth 8-7023] instance 'xadc_cds' of module 'xadc_wiz_10' has 19 connections declared, but only 11 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:168]
+WARNING: [Synth 8-7023] instance 'ed_eoc_out_cds' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:184]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'cds_and_water_level_control' (9#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:156]
+INFO: [Synth 8-6157] synthesizing module 'HC_SR04_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:683]
+	Parameter S_IDLE bound to: 4'b0001 
+	Parameter S_10US_TTL bound to: 4'b0010 
+	Parameter S_WAIT_PEDGE bound to: 4'b0100 
+	Parameter S_CALC_DIST bound to: 4'b1000 
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:710]
+INFO: [Synth 8-6157] synthesizing module 'sr04_div_58' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'sr04_div_58' (10#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:320]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:744]
+WARNING: [Synth 8-5788] Register hc_sr04_trig_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:748]
+WARNING: [Synth 8-5788] Register distance_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'HC_SR04_cntr' (11#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:683]
+WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (8) of module 'HC_SR04_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:73]
+INFO: [Synth 8-6157] synthesizing module 'window_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:213]
+	Parameter S_MANUAL_MODE bound to: 2'b01 
+	Parameter S_AUTO_MODE bound to: 2'b10 
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:248]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_1000' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
+WARNING: [Synth 8-7023] instance 'ed_source' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:56]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_1000' (12#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:249]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:266]
+INFO: [Synth 8-6157] synthesizing module 'pwm_Nstep_freq' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:968]
+	Parameter sys_clk bound to: 100000000 - type: integer 
+	Parameter pwm_freq bound to: 50 - type: integer 
+	Parameter duty_step bound to: 200 - type: integer 
+	Parameter temp bound to: 10000 - type: integer 
+	Parameter temp_half bound to: 5000 - type: integer 
+WARNING: [Synth 8-7023] instance 'edge_detector_0' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:995]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_Nstep_freq' (13#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:968]
+WARNING: [Synth 8-5788] Register right_duty_reg in module window_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:256]
+WARNING: [Synth 8-5788] Register left_duty_reg in module window_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:257]
+INFO: [Synth 8-6155] done synthesizing module 'window_control' (14#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:213]
+INFO: [Synth 8-6157] synthesizing module 'electric_fan_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:314]
+	Parameter S_MANUAL_MODE bound to: 2'b01 
+	Parameter S_AUTO_MODE bound to: 2'b10 
+	Parameter S_SERVO_STOP bound to: 2'b01 
+	Parameter S_SERVO_START bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:352]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+	Parameter sys_clk bound to: 100000000 - type: integer 
+	Parameter pwm_freq bound to: 100 - type: integer 
+	Parameter duty_step bound to: 4 - type: integer 
+	Parameter temp bound to: 250000 - type: integer 
+	Parameter temp_half bound to: 125000 - type: integer 
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr' (15#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:389]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:390]
+WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:391]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:414]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized0' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+	Parameter sys_clk bound to: 100000000 - type: integer 
+	Parameter pwm_freq bound to: 50 - type: integer 
+	Parameter duty_step bound to: 200 - type: integer 
+	Parameter temp bound to: 10000 - type: integer 
+	Parameter temp_half bound to: 5000 - type: integer 
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized0' (15#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'electric_fan_control' (16#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:314]
+INFO: [Synth 8-6157] synthesizing module 'led_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:448]
+	Parameter S_MANUAL_MODE bound to: 2'b01 
+	Parameter S_AUTO_MODE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:487]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized1' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+	Parameter sys_clk bound to: 100000000 - type: integer 
+	Parameter pwm_freq bound to: 10000 - type: integer 
+	Parameter duty_step bound to: 6 - type: integer 
+	Parameter temp bound to: 1666 - type: integer 
+	Parameter temp_half bound to: 833 - type: integer 
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized1' (16#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized2' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+	Parameter sys_clk bound to: 100000000 - type: integer 
+	Parameter pwm_freq bound to: 10000 - type: integer 
+	Parameter duty_step bound to: 256 - type: integer 
+	Parameter temp bound to: 39 - type: integer 
+	Parameter temp_half bound to: 19 - type: integer 
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized2' (16#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'led_control' (17#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:448]
+INFO: [Synth 8-6157] synthesizing module 'water_pump' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:671]
+INFO: [Synth 8-6155] done synthesizing module 'water_pump' (18#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:671]
+INFO: [Synth 8-6157] synthesizing module 'led_height_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:514]
+	Parameter S_MANUAL_MODE bound to: 2'b01 
+	Parameter S_AUTO_MODE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:545]
+INFO: [Synth 8-6157] synthesizing module 'step_motor_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:581]
+	Parameter S_SEND_SEQUENCE bound to: 2'b01 
+	Parameter S_WAIT_1MS bound to: 2'b10 
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:589]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:590]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:637]
+WARNING: [Synth 8-5788] Register half_step_mode_sequence_reg in module step_motor_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:641]
+INFO: [Synth 8-6155] done synthesizing module 'step_motor_control' (19#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'led_height_control' (20#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:514]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:22]
+	Parameter IDLE bound to: 9'b000000001 
+	Parameter INIT bound to: 9'b000000010 
+	Parameter SEND_STRING_TEMPERATURE bound to: 9'b000000100 
+	Parameter SEND_TEMPERATURE_DATA bound to: 9'b000001000 
+	Parameter SEND_COMMAND_NEXT_LINE bound to: 9'b000010000 
+	Parameter SEND_STRING_HUMIDITY bound to: 9'b000100000 
+	Parameter SEND_HUMIDITY_DATA bound to: 9'b001000000 
+	Parameter WAIT_1SEC bound to: 9'b010000000 
+	Parameter SEND_COMMAND bound to: 9'b100000000 
+INFO: [Synth 8-6157] synthesizing module 'bin_to_dec' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec' (21#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:52]
+INFO: [Synth 8-6157] synthesizing module 'i2c_lcd_send_byte' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:333]
+	Parameter IDLE bound to: 6'b000001 
+	Parameter SEND_HIGH_NIBBLE_DISABLE bound to: 6'b000010 
+	Parameter SEND_HIGH_NIBBLE_ENABLE bound to: 6'b000100 
+	Parameter SEND_LOW_NIBBLE_DISABLE bound to: 6'b001000 
+	Parameter SEND_LOW_NIBBLE_ENABLE bound to: 6'b010000 
+	Parameter SEND_DISABLE bound to: 6'b100000 
+WARNING: [Synth 8-7023] instance 'comm_go_edge' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:360]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:364]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:394]
+INFO: [Synth 8-6157] synthesizing module 'I2C_master' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:490]
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter COMM_START bound to: 7'b0000010 
+	Parameter SEND_ADDR bound to: 7'b0000100 
+	Parameter RD_ACK bound to: 7'b0001000 
+	Parameter SEND_DATA bound to: 7'b0010000 
+	Parameter SCL_STOP bound to: 7'b0100000 
+	Parameter COMM_STOP bound to: 7'b1000000 
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:519]
+WARNING: [Synth 8-7023] instance 'comm_go_edge' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:556]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:583]
+WARNING: [Synth 8-3848] Net led in module/entity I2C_master does not have driver. [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:497]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_master' (22#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:490]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_lcd_send_byte' (23#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:333]
+WARNING: [Synth 8-7023] instance 'i2c_lcd_send_byte_0' of module 'i2c_lcd_send_byte' has 10 connections declared, but only 9 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:72]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:147]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:175]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:210]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:252]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:284]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:110]
+WARNING: [Synth 8-5788] Register send_reg in module lcd_display_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:73]
+WARNING: [Synth 8-5788] Register send_buffer_reg in module lcd_display_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display_control' (24#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uart_app_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:23]
+	Parameter TIMER_MAX bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:351]
+	Parameter DBITS bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter BR_LIMIT bound to: 651 - type: integer 
+	Parameter BR_BITS bound to: 10 - type: integer 
+	Parameter FIFO_EXP bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_rate_generator' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:23]
+	Parameter N bound to: 10 - type: integer 
+	Parameter M bound to: 651 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_rate_generator' (25#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:163]
+	Parameter DBITS bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (26#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:163]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:54]
+	Parameter DBITS bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (27#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:54]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:255]
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter ADDR_SPACE_EXP bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (28#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (29#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:351]
+INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter_fnd' (30#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:32]
+INFO: [Synth 8-6157] synthesizing module 'decoder_7seg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_7seg' (31#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_cntr' (32#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:22]
+WARNING: [Synth 8-689] width (1) of port connection 'com' does not match port width (4) of module 'fnd_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:121]
+WARNING: [Synth 8-689] width (1) of port connection 'seg_7' does not match port width (8) of module 'fnd_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'uart_app_control' (33#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show_the_fnd' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:99]
+WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:110]
+WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'show_the_fnd' (34#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'top_module_of_smart_farm' (35#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:23]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[7]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[6]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[5]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[4]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[3]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[2]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[1]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[0]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[21]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[20]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[19]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[18]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[17]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[16]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[15]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[14]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[13]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[12]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[11]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[10]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[9]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[8]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[7]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[6]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[5]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[4]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[3]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[2]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[1]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port distance_cm[0]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[15]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[14]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[13]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[12]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[11]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[10]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[9]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[8]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[7]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[6]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[5]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[4]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[3]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[2]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[1]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[0]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[7]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[6]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[5]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[4]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[3]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[2]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[1]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port sunlight_value[0]
+WARNING: [Synth 8-3331] design lcd_display_control has unconnected port water_flag
+WARNING: [Synth 8-3331] design water_pump has unconnected port clk
+WARNING: [Synth 8-3331] design water_pump has unconnected port reset_p
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[7]
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[6]
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[5]
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[4]
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[3]
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[2]
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[1]
+WARNING: [Synth 8-3331] design electric_fan_control has unconnected port dht11_value[0]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[7]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[6]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[5]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[4]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[3]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[2]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[1]
+WARNING: [Synth 8-3331] design window_control has unconnected port dht11_value[0]
+WARNING: [Synth 8-3331] design HC_SR04_cntr has unconnected port led_debug[7]
+WARNING: [Synth 8-3331] design HC_SR04_cntr has unconnected port led_debug[6]
+WARNING: [Synth 8-3331] design HC_SR04_cntr has unconnected port led_debug[5]
+WARNING: [Synth 8-3331] design HC_SR04_cntr has unconnected port led_debug[4]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[15]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[14]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[13]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[12]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[11]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[10]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[9]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[8]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[7]
+WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[6]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port btn[3]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[13]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[12]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[9]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[8]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[5]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[4]
+WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1238.789 ; gain = 298.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1238.789 ; gain = 298.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1238.789 ; gain = 298.738
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1238.789 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.xdc] for cell 'cds_and_water_level_control_instance/xadc_cds/inst'
+Finished Parsing XDC File [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.xdc] for cell 'cds_and_water_level_control_instance/xadc_cds/inst'
+Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led_debug'. [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_smart_farm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_of_smart_farm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_smart_farm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_of_smart_farm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1362.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1362.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1362.078 ; gain = 422.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1362.078 ; gain = 422.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cds_and_water_level_control_instance/xadc_cds/inst. (constraint file  C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc, line 12).
+Applied set_property DONT_TOUCH = true for cds_and_water_level_control_instance/xadc_cds. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1362.078 ; gain = 422.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:269]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:269]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'window_control'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'step_motor_control'
+INFO: [Synth 8-4471] merging register 'comm_go_reg' into 'count_usec_en_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:389]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lcd_display_control'
+INFO: [Synth 8-5546] ROM "send_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "send_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count_usec_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_receiver'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_app_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+           S_MANUAL_MODE |                               01 |                               01
+             S_AUTO_MODE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'window_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+         S_SEND_SEQUENCE |                               01 |                               01
+              S_WAIT_1MS |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'step_motor_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                      00000000001 |                      00000000001
+ SEND_STRING_TEMPERATURE |                      00000000100 |                      00000000100
+   SEND_TEMPERATURE_DATA |                      00000001000 |                      00000001000
+  SEND_COMMAND_NEXT_LINE |                      00000010000 |                      00000010000
+    SEND_STRING_HUMIDITY |                      00000100000 |                      00000100000
+      SEND_HUMIDITY_DATA |                      00001000000 |                      00001000000
+               WAIT_1SEC |                      00010000000 |                      00010000000
+            SEND_COMMAND |                      00100000000 |                      00100000000
+                    INIT |                      00000000010 |                      00000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'lcd_display_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                             0000
+                 iSTATE1 |                               01 |                             0001
+                  iSTATE |                               10 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_app_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.078 ; gain = 422.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 7     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 8     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 152   
+	   2 Input      3 Bit       Adders := 13    
+	   2 Input      2 Bit       Adders := 6     
++---Registers : 
+	              112 Bit    Registers := 1     
+	               88 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 10    
+	                6 Bit    Registers := 13    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 101   
++---RAMs : 
+	               32 Bit         RAMs := 2     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 18    
+	   3 Input     40 Bit        Muxes := 6     
+	  10 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 6     
+	   7 Input      8 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 13    
+	   3 Input      6 Bit        Muxes := 5     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 114   
+	   6 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 16    
+	   3 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 136   
+	   7 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 7     
+	  15 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 23    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module edge_detector_p 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module edge_detector_n 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module clock_div_100 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module dht11_cntrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 18    
+	   3 Input     40 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module cds_and_water_level_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 2     
+Module sr04_div_58 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module HC_SR04_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_div_1000 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module window_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+Module electric_fan_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module led_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module step_motor_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module led_height_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+Module bin_to_dec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 25    
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module I2C_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 7     
+Module i2c_lcd_send_byte 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+Module lcd_display_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	              112 Bit    Registers := 1     
+	               88 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  10 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   7 Input      8 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 34    
+	   7 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 14    
+Module baud_rate_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module uart_receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module uart_transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+Module fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               32 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 6     
+Module ring_counter_fnd 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module fnd_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_app_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+INFO: [Synth 8-4471] merging register 'step_motor_control_instance/msec_clk/ed_source/ff_cur_reg' into 'step_motor_control_instance/usec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'step_motor_control_instance/msec_clk/ed_source/ff_old_reg' into 'step_motor_control_instance/usec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+WARNING: [Synth 8-6014] Unused sequential element UART_UNIT/FIFO_RX_UNIT/memory_reg was removed. 
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[7]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[6]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[5]
+WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[6]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[7]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[4]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[5]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[2]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[3]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart_app_control_instance/\data_to_send_reg[0] )
+INFO: [Synth 8-3886] merging instance 'lcd_display_control_instance/next_state_reg[9]' (FDCE) to 'lcd_display_control_instance/next_state_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\next_state_reg[10] )
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/byte_index_reg[4]' (FDCE) to 'uart_app_control_instance/byte_index_reg[3]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/byte_index_reg[5]' (FDCE) to 'uart_app_control_instance/byte_index_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart_app_control_instance/\byte_index_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[83] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[99] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[107] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[35] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[51] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[59] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[75] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[38] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[46] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[54] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[70] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[78] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[86] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[94] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[102] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[110] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[38] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[46] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[54] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[70] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[78] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[34] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[42] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[66] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_temperature_reg[82] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[90] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[98] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_temperature_reg[106] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[42] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (lcd_display_control_instance/\str_humidity_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lcd_display_control_instance/\str_humidity_reg[58] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'lcd_display_control_instance/state_reg[9]' (FDC_1) to 'lcd_display_control_instance/state_reg[10]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[12]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[13]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[14]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[15]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[16]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[17]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[18]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[19]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'HC_SR04_cntr_0/distance_reg[20]' (FDE_1) to 'HC_SR04_cntr_0/distance_reg[21]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[12]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[13]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[11]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[9]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[20]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[21]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[28]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[29]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[36]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[37]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[44]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[45]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[52]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[53]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[60]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[61]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/tx_data_reg[4]' (FDCE) to 'uart_app_control_instance/tx_data_reg[5]'
+WARNING: [Synth 8-3332] Sequential element (UART_UNIT/UART_RX_UNIT/FSM_sequential_state_reg[1]) is unused and will be removed from module uart_app_control.
+WARNING: [Synth 8-3332] Sequential element (UART_UNIT/UART_RX_UNIT/FSM_sequential_state_reg[0]) is unused and will be removed from module uart_app_control.
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/i_5/timer_count_reg[28]' (FDC) to 'uart_app_control_instance/i_5/timer_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/i_5/timer_count_reg[30]' (FDC) to 'uart_app_control_instance/i_5/timer_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/i_5/timer_count_reg[31]' (FDC) to 'uart_app_control_instance/i_5/timer_count_reg[29]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1362.078 ; gain = 422.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++--------------------------+-----------------------------------+-----------+----------------------+-------------+
+|Module Name               | RTL Object                        | Inference | Size (Depth x Width) | Primitives  | 
++--------------------------+-----------------------------------+-----------+----------------------+-------------+
+|uart_app_control_instance | UART_UNIT/FIFO_TX_UNIT/memory_reg | Implied   | 4 x 8                | RAM32M x 2	 | 
++--------------------------+-----------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1362.078 ; gain = 422.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1367.254 ; gain = 427.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++--------------------------+-----------------------------------+-----------+----------------------+-------------+
+|Module Name               | RTL Object                        | Inference | Size (Depth x Width) | Primitives  | 
++--------------------------+-----------------------------------+-----------+----------------------+-------------+
+|uart_app_control_instance | UART_UNIT/FIFO_TX_UNIT/memory_reg | Implied   | 4 x 8                | RAM32M x 2	 | 
++--------------------------+-----------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[1]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[9]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[21]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1396.676 ; gain = 456.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:di_in[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:dwe_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:vp_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:vn_in to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   240|
+|3     |LUT1   |    21|
+|4     |LUT2   |  1026|
+|5     |LUT3   |   138|
+|6     |LUT4   |   228|
+|7     |LUT5   |   155|
+|8     |LUT6   |   326|
+|9     |MUXF7  |     2|
+|10    |RAM32M |     2|
+|11    |XADC   |     1|
+|12    |FDCE   |   942|
+|13    |FDPE   |    39|
+|14    |FDRE   |    81|
+|15    |IBUF   |    18|
+|16    |IOBUF  |     1|
+|17    |OBUF   |    26|
+|18    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+----------------------------+------+
+|      |Instance                               |Module                      |Cells |
++------+---------------------------------------+----------------------------+------+
+|1     |top                                    |                            |  3248|
+|2     |  HC_SR04_cntr_0                       |HC_SR04_cntr                |   169|
+|3     |    clk_div_58                         |sr04_div_58                 |    23|
+|4     |    edge_detector_0                    |edge_detector_p_37          |     7|
+|5     |    usec_clk                           |clock_div_100_38            |    73|
+|6     |      ed                               |edge_detector_n_39          |    57|
+|7     |  btn0                                 |button_cntr                 |    29|
+|8     |    ed_btn                             |edge_detector_p_35          |     2|
+|9     |    ed_clk                             |edge_detector_p_36          |     3|
+|10    |  btn1                                 |button_cntr_0               |     3|
+|11    |    ed_btn                             |edge_detector_p_34          |     2|
+|12    |  btn2                                 |button_cntr_1               |     3|
+|13    |    ed_btn                             |edge_detector_p_33          |     2|
+|14    |  cds_and_water_level_control_instance |cds_and_water_level_control |    27|
+|15    |    xadc_cds                           |xadc_wiz_10                 |     1|
+|16    |    ed_eoc_out_cds                     |edge_detector_p_32          |     4|
+|17    |  dht11_control_instance               |dht11_control               |   372|
+|18    |    dth11                              |dht11_cntrl                 |   367|
+|19    |      ed                               |edge_detector_p_29          |   112|
+|20    |      usec_clk                         |clock_div_100_30            |    49|
+|21    |        ed                             |edge_detector_n_31          |    33|
+|22    |  electric_fan_control_instance        |electric_fan_control        |   631|
+|23    |    control_power_pwm                  |pwm_cntr                    |   264|
+|24    |      ed                               |edge_detector_p_28          |     6|
+|25    |    control_servo_pwm                  |pwm_cntr__parameterized0    |   260|
+|26    |      ed                               |edge_detector_p_27          |     6|
+|27    |    msec_clk                           |clock_div_1000_20           |    29|
+|28    |      ed                               |edge_detector_n_26          |     5|
+|29    |    sec_clk                            |clock_div_1000_21           |    32|
+|30    |      ed                               |edge_detector_n_24          |     5|
+|31    |      ed_source                        |edge_detector_n_25          |     3|
+|32    |    usec_clk                           |clock_div_100_22            |    20|
+|33    |      ed                               |edge_detector_n_23          |     4|
+|34    |  lcd_display_control_instance         |lcd_display_control         |   449|
+|35    |    i2c_lcd_send_byte_0                |i2c_lcd_send_byte           |   251|
+|36    |      I2C_master_0                     |I2C_master                  |    83|
+|37    |        comm_go_edge                   |edge_detector_n_16          |     3|
+|38    |        scl_edge                       |edge_detector_n_17          |    12|
+|39    |        usec_clk                       |clock_div_100_18            |    20|
+|40    |          ed                           |edge_detector_n_19          |     4|
+|41    |      comm_go_edge                     |edge_detector_n_13          |     6|
+|42    |      usec_clk                         |clock_div_100_14            |    49|
+|43    |        ed                             |edge_detector_n_15          |    33|
+|44    |    usec_clk                           |clock_div_100_11            |    49|
+|45    |      ed                               |edge_detector_n_12          |    33|
+|46    |  led_control_instance                 |led_control                 |   546|
+|47    |    control_auto_led_pwm               |pwm_cntr__parameterized2    |   263|
+|48    |      ed                               |edge_detector_p_10          |     3|
+|49    |    control_manual_led_pwm             |pwm_cntr__parameterized1    |   264|
+|50    |      ed                               |edge_detector_p_9           |     3|
+|51    |  led_height_control_instance          |led_height_control          |    86|
+|52    |    step_motor_control_instance        |step_motor_control          |    78|
+|53    |      msec_clk                         |clock_div_1000_5            |    30|
+|54    |        ed                             |edge_detector_n_8           |     5|
+|55    |      usec_clk                         |clock_div_100_6             |    20|
+|56    |        ed                             |edge_detector_n_7           |     4|
+|57    |  show_the_fnd_instance                |show_the_fnd                |    45|
+|58    |    fnd_cntr_instance                  |fnd_cntr                    |    45|
+|59    |      nolabel_line40                   |decoder_7seg                |     7|
+|60    |      rc                               |ring_counter_fnd            |    34|
+|61    |        ed                             |edge_detector_p             |     3|
+|62    |  uart_app_control_instance            |uart_app_control            |   233|
+|63    |    UART_UNIT                          |uart_top                    |    91|
+|64    |      BAUD_RATE_GEN                    |baud_rate_generator         |    25|
+|65    |      FIFO_TX_UNIT                     |fifo                        |    23|
+|66    |      UART_TX_UNIT                     |uart_transmitter            |    43|
+|67    |  window_control_instance              |window_control              |   606|
+|68    |    msec_clk                           |clock_div_1000              |    30|
+|69    |    pwm_left_servo_motor               |pwm_Nstep_freq              |   260|
+|70    |      edge_detector_0                  |edge_detector_n_4           |     6|
+|71    |    pwm_right_servo_motor              |pwm_Nstep_freq_2            |   260|
+|72    |      edge_detector_0                  |edge_detector_n_3           |     6|
+|73    |    usec_clk                           |clock_div_100               |    20|
+|74    |      ed                               |edge_detector_n             |     4|
++------+---------------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1401.934 ; gain = 338.594
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1409.984 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1410.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+275 Infos, 173 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 1410.027 ; gain = 727.836
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1410.027 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/top_module_of_smart_farm.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_of_smart_farm_utilization_synth.rpt -pb top_module_of_smart_farm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 23 20:18:40 2024...

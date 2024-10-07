@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jun 12 16:17:55 2024
+# Process ID: 7092
+# Current directory: C:/work/vivado_2019/basys3_soc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1264 C:\work\vivado_2019\basys3_soc\basys3_soc.xpr
+# Log file: C:/work/vivado_2019/basys3_soc/vivado.log
+# Journal file: C:/work/vivado_2019/basys3_soc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/vivado_2019/basys3_soc/basys3_soc.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1075.508 ; gain = 443.188
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 12 16:18:41 2024...

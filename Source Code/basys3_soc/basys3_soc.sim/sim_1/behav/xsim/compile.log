@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module xor_gate
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/half_adder_using_library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'half_adder' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/half_adder_using_library.v:1]

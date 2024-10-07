@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../basys3_soc.srcs/sources_1/new/clock_library.v" \
+"../../../../basys3_soc.srcs/sources_1/new/controler.v" \
+"../../../../basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v" \
+"../../../../basys3_soc.srcs/sim_1/new/tb_dht11_cntr.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
