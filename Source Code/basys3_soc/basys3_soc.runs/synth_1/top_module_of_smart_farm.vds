@@ -2,12 +2,12 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Sep 23 20:17:50 2024
-# Process ID: 35964
-# Current directory: C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1
+# Start of session at: Fri Aug 30 12:46:26 2024
+# Process ID: 26844
+# Current directory: E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1
 # Command line: vivado.exe -log top_module_of_smart_farm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module_of_smart_farm.tcl
-# Log file: C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/top_module_of_smart_farm.vds
-# Journal file: C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1\vivado.jou
+# Log file: E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/top_module_of_smart_farm.vds
+# Journal file: E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top_module_of_smart_farm.tcl -notrace
 Command: synth_design -top top_module_of_smart_farm -part xc7a35tcpg236-1
@@ -16,23 +16,23 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 42956 
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:691]
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:835]
+INFO: Helper process launched with PID 7984 
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:691]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:835]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1175.844 ; gain = 235.793
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1176.273 ; gain = 236.293
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_module_of_smart_farm' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:23]
-INFO: [Synth 8-6157] synthesizing module 'button_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:49]
-INFO: [Synth 8-6157] synthesizing module 'edge_detector_p' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
-INFO: [Synth 8-6155] done synthesizing module 'edge_detector_p' (1#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
-WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'button_cntr' (2#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:49]
-WARNING: [Synth 8-7023] instance 'btn0' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:47]
-WARNING: [Synth 8-7023] instance 'btn1' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:48]
-WARNING: [Synth 8-7023] instance 'btn2' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:49]
-INFO: [Synth 8-6157] synthesizing module 'dht11_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:141]
-INFO: [Synth 8-6157] synthesizing module 'dht11_cntrl' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:337]
+INFO: [Synth 8-6157] synthesizing module 'top_module_of_smart_farm' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:49]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_p' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_p' (1#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
+WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'button_cntr' (2#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:49]
+WARNING: [Synth 8-7023] instance 'btn0' of module 'button_cntr' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:47]
+WARNING: [Synth 8-7023] instance 'btn1' of module 'button_cntr' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:48]
+WARNING: [Synth 8-7023] instance 'btn2' of module 'button_cntr' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:49]
+INFO: [Synth 8-6157] synthesizing module 'dht11_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:140]
+INFO: [Synth 8-6157] synthesizing module 'dht11_cntrl' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:337]
 	Parameter S_IDLE bound to: 6'b000001 
 	Parameter S_LOW_18MS bound to: 6'b000010 
 	Parameter S_HIGH_20US bound to: 6'b000100 
@@ -41,22 +41,22 @@ INFO: [Synth 8-6157] synthesizing module 'dht11_cntrl' [C:/Users/user/Documents/
 	Parameter S_READ_DATA bound to: 6'b100000 
 	Parameter S_WAIT_PEDGE bound to: 2'b01 
 	Parameter S_WAIT_NEDGE bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'clock_div_100' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:23]
-INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
-INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (3#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (4#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:23]
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:359]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:467]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:397]
-WARNING: [Synth 8-5788] Register dht11_buffer_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:378]
-WARNING: [Synth 8-5788] Register humidity_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:498]
-WARNING: [Synth 8-5788] Register temperature_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:499]
-INFO: [Synth 8-6155] done synthesizing module 'dht11_cntrl' (5#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:337]
-WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (16) of module 'dht11_cntrl' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:147]
-INFO: [Synth 8-6155] done synthesizing module 'dht11_control' (6#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:141]
-INFO: [Synth 8-6157] synthesizing module 'cds_and_water_level_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:156]
-INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_10' [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.v:53]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_100' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:23]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (3#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (4#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:23]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:359]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:467]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:397]
+WARNING: [Synth 8-5788] Register dht11_buffer_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:378]
+WARNING: [Synth 8-5788] Register humidity_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:498]
+WARNING: [Synth 8-5788] Register temperature_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:499]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_cntrl' (5#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:337]
+WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (16) of module 'dht11_cntrl' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_control' (6#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:140]
+INFO: [Synth 8-6157] synthesizing module 'cds_and_water_level_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:155]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_10' [e:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.v:53]
 INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:82113]
 	Parameter INIT_40 bound to: 16'b0000000000000000 
 	Parameter INIT_41 bound to: 16'b0010000100001111 
@@ -95,110 +95,110 @@ INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.2/scripts
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'XADC' (7#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:82113]
-INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_10' (8#1) [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.v:53]
-WARNING: [Synth 8-689] width (17) of port connection 'do_out' does not match port width (16) of module 'xadc_wiz_10' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:178]
-WARNING: [Synth 8-7023] instance 'xadc_cds' of module 'xadc_wiz_10' has 19 connections declared, but only 11 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:168]
-WARNING: [Synth 8-7023] instance 'ed_eoc_out_cds' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:184]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:195]
-INFO: [Synth 8-6155] done synthesizing module 'cds_and_water_level_control' (9#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:156]
-INFO: [Synth 8-6157] synthesizing module 'HC_SR04_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:683]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_10' (8#1) [e:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.v:53]
+WARNING: [Synth 8-689] width (17) of port connection 'do_out' does not match port width (16) of module 'xadc_wiz_10' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:177]
+WARNING: [Synth 8-7023] instance 'xadc_cds' of module 'xadc_wiz_10' has 19 connections declared, but only 11 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:167]
+WARNING: [Synth 8-7023] instance 'ed_eoc_out_cds' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'cds_and_water_level_control' (9#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:155]
+INFO: [Synth 8-6157] synthesizing module 'HC_SR04_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:683]
 	Parameter S_IDLE bound to: 4'b0001 
 	Parameter S_10US_TTL bound to: 4'b0010 
 	Parameter S_WAIT_PEDGE bound to: 4'b0100 
 	Parameter S_CALC_DIST bound to: 4'b1000 
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:710]
-INFO: [Synth 8-6157] synthesizing module 'sr04_div_58' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:320]
-INFO: [Synth 8-6155] done synthesizing module 'sr04_div_58' (10#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:320]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:744]
-WARNING: [Synth 8-5788] Register hc_sr04_trig_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:748]
-WARNING: [Synth 8-5788] Register distance_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:782]
-INFO: [Synth 8-6155] done synthesizing module 'HC_SR04_cntr' (11#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:683]
-WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (8) of module 'HC_SR04_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:73]
-INFO: [Synth 8-6157] synthesizing module 'window_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:213]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:710]
+INFO: [Synth 8-6157] synthesizing module 'sr04_div_58' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'sr04_div_58' (10#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:320]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:744]
+WARNING: [Synth 8-5788] Register hc_sr04_trig_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:748]
+WARNING: [Synth 8-5788] Register distance_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'HC_SR04_cntr' (11#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:683]
+WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (8) of module 'HC_SR04_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:73]
+INFO: [Synth 8-6157] synthesizing module 'window_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:212]
 	Parameter S_MANUAL_MODE bound to: 2'b01 
 	Parameter S_AUTO_MODE bound to: 2'b10 
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:248]
-INFO: [Synth 8-6157] synthesizing module 'clock_div_1000' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
-WARNING: [Synth 8-7023] instance 'ed_source' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:56]
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div_1000' (12#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
-WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:249]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:266]
-INFO: [Synth 8-6157] synthesizing module 'pwm_Nstep_freq' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:968]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:247]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_1000' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
+WARNING: [Synth 8-7023] instance 'ed_source' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:56]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_1000' (12#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:248]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:265]
+INFO: [Synth 8-6157] synthesizing module 'pwm_Nstep_freq' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:968]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 50 - type: integer 
 	Parameter duty_step bound to: 200 - type: integer 
 	Parameter temp bound to: 10000 - type: integer 
 	Parameter temp_half bound to: 5000 - type: integer 
-WARNING: [Synth 8-7023] instance 'edge_detector_0' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:995]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_Nstep_freq' (13#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:968]
-WARNING: [Synth 8-5788] Register right_duty_reg in module window_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:256]
-WARNING: [Synth 8-5788] Register left_duty_reg in module window_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:257]
-INFO: [Synth 8-6155] done synthesizing module 'window_control' (14#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:213]
-INFO: [Synth 8-6157] synthesizing module 'electric_fan_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:314]
+WARNING: [Synth 8-7023] instance 'edge_detector_0' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:995]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_Nstep_freq' (13#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:968]
+WARNING: [Synth 8-5788] Register right_duty_reg in module window_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:255]
+WARNING: [Synth 8-5788] Register left_duty_reg in module window_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:256]
+INFO: [Synth 8-6155] done synthesizing module 'window_control' (14#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:212]
+INFO: [Synth 8-6157] synthesizing module 'electric_fan_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:313]
 	Parameter S_MANUAL_MODE bound to: 2'b01 
 	Parameter S_AUTO_MODE bound to: 2'b10 
 	Parameter S_SERVO_STOP bound to: 2'b01 
 	Parameter S_SERVO_START bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:352]
-INFO: [Synth 8-6157] synthesizing module 'pwm_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:351]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 100 - type: integer 
 	Parameter duty_step bound to: 4 - type: integer 
 	Parameter temp bound to: 250000 - type: integer 
 	Parameter temp_half bound to: 125000 - type: integer 
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr' (15#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:389]
-WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:390]
-WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:391]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:414]
-INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized0' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr' (15#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:388]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:389]
+WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:390]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:413]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized0' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 50 - type: integer 
 	Parameter duty_step bound to: 200 - type: integer 
 	Parameter temp bound to: 10000 - type: integer 
 	Parameter temp_half bound to: 5000 - type: integer 
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized0' (15#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
-INFO: [Synth 8-6155] done synthesizing module 'electric_fan_control' (16#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:314]
-INFO: [Synth 8-6157] synthesizing module 'led_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:448]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized0' (15#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'electric_fan_control' (16#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:313]
+INFO: [Synth 8-6157] synthesizing module 'led_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:447]
 	Parameter S_MANUAL_MODE bound to: 2'b01 
 	Parameter S_AUTO_MODE bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:487]
-INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized1' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:486]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized1' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 10000 - type: integer 
 	Parameter duty_step bound to: 6 - type: integer 
 	Parameter temp bound to: 1666 - type: integer 
 	Parameter temp_half bound to: 833 - type: integer 
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized1' (16#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
-INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized2' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized1' (16#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr__parameterized2' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 10000 - type: integer 
 	Parameter duty_step bound to: 256 - type: integer 
 	Parameter temp bound to: 39 - type: integer 
 	Parameter temp_half bound to: 19 - type: integer 
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized2' (16#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
-INFO: [Synth 8-6155] done synthesizing module 'led_control' (17#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:448]
-INFO: [Synth 8-6157] synthesizing module 'water_pump' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:671]
-INFO: [Synth 8-6155] done synthesizing module 'water_pump' (18#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:671]
-INFO: [Synth 8-6157] synthesizing module 'led_height_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:514]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr__parameterized2' (16#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'led_control' (17#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:447]
+INFO: [Synth 8-6157] synthesizing module 'water_pump' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:670]
+INFO: [Synth 8-6155] done synthesizing module 'water_pump' (18#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:670]
+INFO: [Synth 8-6157] synthesizing module 'led_height_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:513]
 	Parameter S_MANUAL_MODE bound to: 2'b01 
 	Parameter S_AUTO_MODE bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:545]
-INFO: [Synth 8-6157] synthesizing module 'step_motor_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:581]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:544]
+INFO: [Synth 8-6157] synthesizing module 'step_motor_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:580]
 	Parameter S_SEND_SEQUENCE bound to: 2'b01 
 	Parameter S_WAIT_1MS bound to: 2'b10 
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:589]
-WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:590]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:637]
-WARNING: [Synth 8-5788] Register half_step_mode_sequence_reg in module step_motor_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:641]
-INFO: [Synth 8-6155] done synthesizing module 'step_motor_control' (19#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:581]
-INFO: [Synth 8-6155] done synthesizing module 'led_height_control' (20#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:514]
-INFO: [Synth 8-6157] synthesizing module 'lcd_display_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:22]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:588]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:589]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:636]
+WARNING: [Synth 8-5788] Register half_step_mode_sequence_reg in module step_motor_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:640]
+INFO: [Synth 8-6155] done synthesizing module 'step_motor_control' (19#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:580]
+INFO: [Synth 8-6155] done synthesizing module 'led_height_control' (20#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:513]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:22]
 	Parameter IDLE bound to: 9'b000000001 
 	Parameter INIT bound to: 9'b000000010 
 	Parameter SEND_STRING_TEMPERATURE bound to: 9'b000000100 
@@ -208,20 +208,20 @@ INFO: [Synth 8-6157] synthesizing module 'lcd_display_control' [C:/Users/user/Do
 	Parameter SEND_HUMIDITY_DATA bound to: 9'b001000000 
 	Parameter WAIT_1SEC bound to: 9'b010000000 
 	Parameter SEND_COMMAND bound to: 9'b100000000 
-INFO: [Synth 8-6157] synthesizing module 'bin_to_dec' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
-INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec' (21#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:52]
-INFO: [Synth 8-6157] synthesizing module 'i2c_lcd_send_byte' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:333]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_dec' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec' (21#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:52]
+INFO: [Synth 8-6157] synthesizing module 'i2c_lcd_send_byte' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:333]
 	Parameter IDLE bound to: 6'b000001 
 	Parameter SEND_HIGH_NIBBLE_DISABLE bound to: 6'b000010 
 	Parameter SEND_HIGH_NIBBLE_ENABLE bound to: 6'b000100 
 	Parameter SEND_LOW_NIBBLE_DISABLE bound to: 6'b001000 
 	Parameter SEND_LOW_NIBBLE_ENABLE bound to: 6'b010000 
 	Parameter SEND_DISABLE bound to: 6'b100000 
-WARNING: [Synth 8-7023] instance 'comm_go_edge' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:360]
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:364]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:394]
-INFO: [Synth 8-6157] synthesizing module 'I2C_master' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:490]
+WARNING: [Synth 8-7023] instance 'comm_go_edge' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:360]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:364]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:394]
+INFO: [Synth 8-6157] synthesizing module 'I2C_master' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:490]
 	Parameter IDLE bound to: 7'b0000001 
 	Parameter COMM_START bound to: 7'b0000010 
 	Parameter SEND_ADDR bound to: 7'b0000100 
@@ -229,72 +229,72 @@ INFO: [Synth 8-6157] synthesizing module 'I2C_master' [C:/Users/user/Documents/G
 	Parameter SEND_DATA bound to: 7'b0010000 
 	Parameter SCL_STOP bound to: 7'b0100000 
 	Parameter COMM_STOP bound to: 7'b1000000 
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:519]
-WARNING: [Synth 8-7023] instance 'comm_go_edge' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:556]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:583]
-WARNING: [Synth 8-3848] Net led in module/entity I2C_master does not have driver. [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:497]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_master' (22#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:490]
-INFO: [Synth 8-6155] done synthesizing module 'i2c_lcd_send_byte' (23#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:333]
-WARNING: [Synth 8-7023] instance 'i2c_lcd_send_byte_0' of module 'i2c_lcd_send_byte' has 10 connections declared, but only 9 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:72]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:147]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:175]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:210]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:252]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:284]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:110]
-WARNING: [Synth 8-5788] Register send_reg in module lcd_display_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:73]
-WARNING: [Synth 8-5788] Register send_buffer_reg in module lcd_display_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'lcd_display_control' (24#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:22]
-INFO: [Synth 8-6157] synthesizing module 'uart_app_control' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:23]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:519]
+WARNING: [Synth 8-7023] instance 'comm_go_edge' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:556]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:583]
+WARNING: [Synth 8-3848] Net led in module/entity I2C_master does not have driver. [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:497]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_master' (22#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:490]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_lcd_send_byte' (23#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:333]
+WARNING: [Synth 8-7023] instance 'i2c_lcd_send_byte_0' of module 'i2c_lcd_send_byte' has 10 connections declared, but only 9 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:72]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:147]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:175]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:210]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:252]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:284]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:110]
+WARNING: [Synth 8-5788] Register send_reg in module lcd_display_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:73]
+WARNING: [Synth 8-5788] Register send_buffer_reg in module lcd_display_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display_control' (24#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uart_app_control' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:23]
 	Parameter TIMER_MAX bound to: 100000000 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:351]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:351]
 	Parameter DBITS bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
 	Parameter BR_LIMIT bound to: 651 - type: integer 
 	Parameter BR_BITS bound to: 10 - type: integer 
 	Parameter FIFO_EXP bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'baud_rate_generator' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'baud_rate_generator' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:23]
 	Parameter N bound to: 10 - type: integer 
 	Parameter M bound to: 651 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'baud_rate_generator' (25#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:23]
-INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'baud_rate_generator' (25#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:163]
 	Parameter DBITS bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
 	Parameter idle bound to: 2'b00 
 	Parameter start bound to: 2'b01 
 	Parameter data bound to: 2'b10 
 	Parameter stop bound to: 2'b11 
-INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (26#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:163]
-INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (26#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:163]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:54]
 	Parameter DBITS bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
 	Parameter idle bound to: 2'b00 
 	Parameter start bound to: 2'b01 
 	Parameter data bound to: 2'b10 
 	Parameter stop bound to: 2'b11 
-INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (27#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:54]
-INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (27#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:54]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:255]
 	Parameter DATA_SIZE bound to: 8 - type: integer 
 	Parameter ADDR_SPACE_EXP bound to: 2 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:318]
-INFO: [Synth 8-6155] done synthesizing module 'fifo' (28#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:255]
-INFO: [Synth 8-6155] done synthesizing module 'uart_top' (29#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:351]
-INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:22]
-INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:278]
-INFO: [Synth 8-6155] done synthesizing module 'ring_counter_fnd' (30#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:32]
-INFO: [Synth 8-6157] synthesizing module 'decoder_7seg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
-INFO: [Synth 8-6155] done synthesizing module 'decoder_7seg' (31#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
-INFO: [Synth 8-6155] done synthesizing module 'fnd_cntr' (32#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:22]
-WARNING: [Synth 8-689] width (1) of port connection 'com' does not match port width (4) of module 'fnd_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:121]
-WARNING: [Synth 8-689] width (1) of port connection 'seg_7' does not match port width (8) of module 'fnd_cntr' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:121]
-INFO: [Synth 8-6155] done synthesizing module 'uart_app_control' (33#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:23]
-INFO: [Synth 8-6157] synthesizing module 'show_the_fnd' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:99]
-WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:110]
-WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:111]
-INFO: [Synth 8-6155] done synthesizing module 'show_the_fnd' (34#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:99]
-INFO: [Synth 8-6155] done synthesizing module 'top_module_of_smart_farm' (35#1) [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (28#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (29#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_master.v:351]
+INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter_fnd' (30#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:32]
+INFO: [Synth 8-6157] synthesizing module 'decoder_7seg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_7seg' (31#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_cntr' (32#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:22]
+WARNING: [Synth 8-689] width (1) of port connection 'com' does not match port width (4) of module 'fnd_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:121]
+WARNING: [Synth 8-689] width (1) of port connection 'seg_7' does not match port width (8) of module 'fnd_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'uart_app_control' (33#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/uart_app_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show_the_fnd' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:99]
+WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:109]
+WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'show_the_fnd' (34#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'top_module_of_smart_farm' (35#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:23]
 WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[7]
 WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[6]
 WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[5]
@@ -392,7 +392,7 @@ WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[
 WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[4]
 WARNING: [Synth 8-3331] design top_module_of_smart_farm has unconnected port sw[3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1238.789 ; gain = 298.738
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1239.992 ; gain = 300.012
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -405,61 +405,61 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1238.789 ; gain = 298.738
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1257.922 ; gain = 317.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1238.789 ; gain = 298.738
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1257.922 ; gain = 317.941
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1238.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1257.922 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.xdc] for cell 'cds_and_water_level_control_instance/xadc_cds/inst'
-Finished Parsing XDC File [c:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.xdc] for cell 'cds_and_water_level_control_instance/xadc_cds/inst'
-Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'led_debug'. [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc:31]
+Parsing XDC File [e:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.xdc] for cell 'cds_and_water_level_control_instance/xadc_cds/inst'
+Finished Parsing XDC File [e:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/ip/xadc_wiz_10/xadc_wiz_10.xdc] for cell 'cds_and_water_level_control_instance/xadc_cds/inst'
+Parsing XDC File [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led_debug'. [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc:31]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_smart_farm_propImpl.xdc].
+Finished Parsing XDC File [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_smart_farm_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_of_smart_farm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_smart_farm_propImpl.xdc].
+Parsing XDC File [E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_smart_farm_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_of_smart_farm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1362.078 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1358.820 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1362.078 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1358.820 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1362.078 ; gain = 422.027
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1358.820 ; gain = 418.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1362.078 ; gain = 422.027
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1358.820 ; gain = 418.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for cds_and_water_level_control_instance/xadc_cds/inst. (constraint file  C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc, line 12).
+Applied set_property DONT_TOUCH = true for cds_and_water_level_control_instance/xadc_cds/inst. (constraint file  E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/dont_touch.xdc, line 12).
 Applied set_property DONT_TOUCH = true for cds_and_water_level_control_instance/xadc_cds. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1362.078 ; gain = 422.027
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1358.820 ; gain = 418.840
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:269]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:269]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:268]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/top_module_of_smart_farm.v:268]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'window_control'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'step_motor_control'
-INFO: [Synth 8-4471] merging register 'comm_go_reg' into 'count_usec_en_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:389]
+INFO: [Synth 8-4471] merging register 'comm_go_reg' into 'count_usec_en_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/i2c_lcd_send_byte.v:389]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lcd_display_control'
 INFO: [Synth 8-5546] ROM "send_buffer" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "send_buffer" won't be mapped to RAM because it is too sparse
@@ -525,7 +525,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_app_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.078 ; gain = 422.027
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1358.820 ; gain = 418.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -906,17 +906,17 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
-INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
-INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
-INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
-INFO: [Synth 8-4471] merging register 'step_motor_control_instance/msec_clk/ed_source/ff_cur_reg' into 'step_motor_control_instance/usec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
-INFO: [Synth 8-4471] merging register 'step_motor_control_instance/msec_clk/ed_source/ff_old_reg' into 'step_motor_control_instance/usec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+INFO: [Synth 8-4471] merging register 'step_motor_control_instance/msec_clk/ed_source/ff_cur_reg' into 'step_motor_control_instance/usec_clk/ed/ff_cur_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'step_motor_control_instance/msec_clk/ed_source/ff_old_reg' into 'step_motor_control_instance/usec_clk/ed/ff_old_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
 WARNING: [Synth 8-6014] Unused sequential element UART_UNIT/FIFO_RX_UNIT/memory_reg was removed. 
-INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
-INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
-INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
-INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_cur_reg' into 'btn0/ed_clk/ff_cur_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
+INFO: [Synth 8-4471] merging register 'btn1/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
+INFO: [Synth 8-4471] merging register 'btn2/ed_clk/ff_old_reg' into 'btn0/ed_clk/ff_old_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
 WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[7]
 WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[6]
 WARNING: [Synth 8-3331] design show_the_fnd has unconnected port sunlight_value[5]
@@ -1058,7 +1058,7 @@ INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/i_5/timer_count
 INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/i_5/timer_count_reg[30]' (FDC) to 'uart_app_control_instance/i_5/timer_count_reg[31]'
 INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/i_5/timer_count_reg[31]' (FDC) to 'uart_app_control_instance/i_5/timer_count_reg[29]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1362.078 ; gain = 422.027
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1358.820 ; gain = 418.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1085,13 +1085,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1362.078 ; gain = 422.027
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 1358.820 ; gain = 418.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1367.254 ; gain = 427.203
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1372.914 ; gain = 432.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1119,7 +1119,7 @@ Start Technology Mapping
 INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[1]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[8]'
 INFO: [Synth 8-3886] merging instance 'uart_app_control_instance/data_to_send_reg[9]' (FDCE) to 'uart_app_control_instance/data_to_send_reg[21]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1396.676 ; gain = 456.625
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 1404.387 ; gain = 464.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1162,13 +1162,13 @@ WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/
 WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:vp_in to constant 0
 WARNING: [Synth 8-3295] tying undriven pin cds_and_water_level_control_instance/xadc_cds:vn_in to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1187,25 +1187,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1321,18 +1321,18 @@ Report Instance Areas:
 |74    |      ed                               |edge_detector_n             |     4|
 +------+---------------------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1401.934 ; gain = 338.594
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1401.934 ; gain = 461.883
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 1410.016 ; gain = 369.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.016 ; gain = 470.035
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1409.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1418.082 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1410.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1418.133 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -1341,10 +1341,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 275 Infos, 173 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 1410.027 ; gain = 727.836
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1410.027 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1418.133 ; gain = 737.117
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1418.133 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.runs/synth_1/top_module_of_smart_farm.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/top_module_of_smart_farm.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_of_smart_farm_utilization_synth.rpt -pb top_module_of_smart_farm_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 23 20:18:40 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 30 12:47:07 2024...

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1727090267">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1724989584">
   <File Type="PA-TCL" Name="top_module_of_smart_farm.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_module_of_smart_farm_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_module_of_smart_farm_reports.tcl"/>
   <File Type="RDS-RDS" Name="top_module_of_smart_farm.vds"/>
   <File Type="RDS-UTIL" Name="top_module_of_smart_farm_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_module_of_smart_farm_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="top_module_of_smart_farm.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_module_of_smart_farm_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="top_module_of_smart_farm_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/xadc_wiz_10/xadc_wiz_10.xci">

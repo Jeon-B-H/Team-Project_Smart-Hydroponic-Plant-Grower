@@ -2,13 +2,13 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Sep  7 22:05:19 2024
-# Process ID: 14736
-# Current directory: C:/Users/user/Documents/GitHub/smartfarm/basys3_soc
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28440 C:\Users\user\Documents\GitHub\smartfarm\basys3_soc\basys3_soc.xpr
-# Log file: C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/vivado.log
-# Journal file: C:/Users/user/Documents/GitHub/smartfarm/basys3_soc\vivado.jou
+# Start of session at: Wed Oct 30 14:19:57 2024
+# Process ID: 4124
+# Current directory: E:/Work/vivado_2019/basys3_soc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent45908 E:\Work\vivado_2019\basys3_soc\basys3_soc.xpr
+# Log file: E:/Work/vivado_2019/basys3_soc/vivado.log
+# Journal file: E:/Work/vivado_2019/basys3_soc\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/user/Documents/GitHub/smartfarm/basys3_soc/basys3_soc.xpr
+open_project E:/Work/vivado_2019/basys3_soc/basys3_soc.xpr
 update_compile_order -fileset sources_1

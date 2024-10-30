@@ -105,7 +105,6 @@ module show_the_fnd (
     output [7:0] seg_7);
     
     // Convert from binary to BCD Code
-    // 이진수로 표현된 데이터를 BCD 코드로 변환한다.
     wire [11:0] temperature_bcd, humidity_bcd;
     bin_to_dec bcd_temp(.bin({4'b0, hex_value[15:8]}),  .bcd(temperature_bcd));
     bin_to_dec bcd_humi(.bin({4'b0, hex_value[7:0]}),  .bcd(humidity_bcd));

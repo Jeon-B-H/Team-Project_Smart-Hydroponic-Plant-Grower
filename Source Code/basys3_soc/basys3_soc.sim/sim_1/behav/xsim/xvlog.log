@@ -1,0 +1,81 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_div_100
+INFO: [VRFC 10-311] analyzing module clock_div_1000
+INFO: [VRFC 10-311] analyzing module clock_div_60
+INFO: [VRFC 10-311] analyzing module counter_bcd_60
+INFO: [VRFC 10-311] analyzing module loadable_counter_bcd_60
+INFO: [VRFC 10-311] analyzing module counter_bcd_60_clear
+INFO: [VRFC 10-311] analyzing module clock_div_10
+INFO: [VRFC 10-311] analyzing module counter_bcd_100_clear
+INFO: [VRFC 10-311] analyzing module loadable_down_counter_bcd_60
+INFO: [VRFC 10-311] analyzing module sr04_div_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder_behavioral
+INFO: [VRFC 10-311] analyzing module half_adder_structural
+INFO: [VRFC 10-311] analyzing module half_adder_dataflow
+INFO: [VRFC 10-311] analyzing module full_adder_structural
+INFO: [VRFC 10-311] analyzing module full_adder_behavioral
+INFO: [VRFC 10-311] analyzing module full_adder_dataflow
+INFO: [VRFC 10-311] analyzing module fadder_4bits_s
+INFO: [VRFC 10-311] analyzing module fadder_4bits_dataflow
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bits_s
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bits
+INFO: [VRFC 10-311] analyzing module comparrator_dataflow
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-311] analyzing module comparator_n_bits_test
+INFO: [VRFC 10-311] analyzing module comparator_N_bits_b
+INFO: [VRFC 10-311] analyzing module decoder_2X4_b
+INFO: [VRFC 10-311] analyzing module decoder_2X4_d
+INFO: [VRFC 10-311] analyzing module decoder_7seg
+INFO: [VRFC 10-311] analyzing module encoder_4X2_b
+INFO: [VRFC 10-311] analyzing module encoder_4X2_d
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-311] analyzing module mux_8_1
+INFO: [VRFC 10-311] analyzing module demux_1_4
+INFO: [VRFC 10-311] analyzing module mux_demux_test
+INFO: [VRFC 10-311] analyzing module bin_to_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module board_test_top
+INFO: [VRFC 10-311] analyzing module fnd_test_top
+INFO: [VRFC 10-311] analyzing module watch_top
+INFO: [VRFC 10-311] analyzing module board_test_top
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'board_test_top' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:116]
+INFO: [VRFC 10-311] analyzing module fnd_test_top
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'fnd_test_top' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:124]
+INFO: [VRFC 10-311] analyzing module loadable_watch_top
+INFO: [VRFC 10-2458] undeclared symbol set_sec1, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:180]
+INFO: [VRFC 10-2458] undeclared symbol set_sec10, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:180]
+INFO: [VRFC 10-2458] undeclared symbol watch_sec1, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:181]
+INFO: [VRFC 10-2458] undeclared symbol watch_sec10, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:181]
+INFO: [VRFC 10-2458] undeclared symbol set_min1, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:187]
+INFO: [VRFC 10-2458] undeclared symbol set_min10, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:187]
+INFO: [VRFC 10-2458] undeclared symbol watch_min1, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:188]
+INFO: [VRFC 10-2458] undeclared symbol watch_min10, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:188]
+WARNING: [VRFC 10-2938] 'watch_sec1' is already implicitly declared on line 181 [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:205]
+WARNING: [VRFC 10-2938] 'set_sec1' is already implicitly declared on line 180 [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:206]
+INFO: [VRFC 10-311] analyzing module stop_watch_top
+INFO: [VRFC 10-311] analyzing module stop_watch_top_homework
+INFO: [VRFC 10-311] analyzing module cook_timer_top
+INFO: [VRFC 10-311] analyzing module keypad_test_top
+INFO: [VRFC 10-2458] undeclared symbol led_key_valid, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:455]
+INFO: [VRFC 10-311] analyzing module dht11_test_top
+INFO: [VRFC 10-311] analyzing module HC_SR04_top
+INFO: [VRFC 10-2458] undeclared symbol led_debug, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:511]
+INFO: [VRFC 10-311] analyzing module led_pwm_top
+INFO: [VRFC 10-311] analyzing module dc_motor_pwm_top
+INFO: [VRFC 10-311] analyzing module sub_motor_pwm_top_button
+INFO: [VRFC 10-2458] undeclared symbol btn1_pedge, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:588]
+INFO: [VRFC 10-2458] undeclared symbol btn2_pedge, assumed default net type wire [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:589]
+INFO: [VRFC 10-311] analyzing module surbo_motor
+INFO: [VRFC 10-311] analyzing module surbo_motor
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'surbo_motor' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/test_top.v:708]
+INFO: [VRFC 10-311] analyzing module adc_ch6_top
+INFO: [VRFC 10-311] analyzing module adc_sequence2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Integrated_Watch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Integrated_Watch
+ERROR: [VRFC 10-3642] port 'btn' must not be declared to be an array [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Integrated_Watch.v:25]
+ERROR: [VRFC 10-2865] module 'Integrated_Watch' ignored due to previous errors [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Integrated_Watch.v:23]
+INFO: [VRFC 10-311] analyzing module Integrated_Watch_test
+ERROR: [VRFC 10-2865] module 'Integrated_Watch_test' ignored due to previous errors [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Integrated_Watch.v:145]
